@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FcmTest</string>
+
+    <!-- facebook auth -->
+    <string name="facebook_app_id">320994318309917</string>
+    <string name="fb_login_protocol_scheme">fb320994318309917</string>
+
+    <!--<string name="string_id"><![CDATA[<font color="#9ee91d">이름 %1$s</font> 주소 <font color="#0000ff"> %2$s</font>]]></string>-->
+    <string name="string_id"><![CDATA[이름<font color="#9ee91d"> %1$s</font> 주소 <font color="#0000ff"> %2$s</font>]]></string>
+
+
+
+
+</resources>

@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "bong.android.fcmtest"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    //서버로 데이터를 보낼때 okhttp를 사용한다면 추가
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //fcm 추가
+    compile 'com.google.firebase:firebase-core:11.0.4'
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    //firebase database
+    compile 'com.google.firebase:firebase-database:11.0.4'
+    //firebase storage
+    compile 'com.google.firebase:firebase-storage:11.0.4'
+    //firebase authentication (google)
+    compile 'com.google.firebase:firebase-auth:11.0.4'
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+    //facebook authntication
+    compile 'com.facebook.android:facebook-android-sdk:4.18.0'
+    //compile 'com.facebook.android:facebook-login:[4,5)'
+
+    //Butterknife
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife:8.7.0'
+    compile project(':library')
+}
+//fcm 추가
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bong.android.fcmtest.FcmTestActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnCalendarTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TestC"
+        android:onClick="mOnClick"
+        tools:layout_editor_absoluteX="157dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnTestDataPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:onClick="mOnClick"
+        tools:layout_editor_absoluteX="160dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalendarTest" />
+
+    <Button
+        android:id="@+id/btnTestFbDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FbDBTest"
+        android:onClick="mOnClick"
+        tools:layout_editor_absoluteX="160dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestDataPicker" />
+
+    <Button
+        android:id="@+id/btnTestFbStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FbStorage"
+        android:onClick="mOnClick"
+        tools:layout_editor_absoluteX="160dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestFbDB" />
+
+    <Button
+        android:id="@+id/btnTestFbAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FbAuth"
+        android:onClick="mOnClick"
+        tools:layout_editor_absoluteX="160dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestFbStorage" />
+
+    <Button
+        android:id="@+id/btnTestFbFbokAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FbFbookAuth"
+        android:onClick="mOnClick"
+        tools:layout_editor_absoluteX="160dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestFbAuth" />
+
+    <Button
+        android:id="@+id/btnTest2"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:onClick="mOnClick"
+        tools:layout_editor_absoluteY="288dp"
+        tools:layout_editor_absoluteX="154dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
